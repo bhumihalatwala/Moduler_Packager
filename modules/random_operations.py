@@ -6,9 +6,8 @@ def generate_random_number():
     try:
         start = int(input("Enter start of range: "))
         end = int(input("Enter end of range: "))
-        count = int(input("Enter number of random numbers to generate: "))
         
-        random_numbers = [random.randint(start, end) for _ in range(count)]
+        random_numbers = random.randint(start, end)
         print("Generated Random Numbers:", random_numbers)
     except ValueError:
         print("Please enter valid integers.")
