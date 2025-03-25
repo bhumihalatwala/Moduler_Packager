@@ -1,4 +1,3 @@
-import sys
 from modules.datetime_operations import datetime_menu
 from modules.math_operations import math_menu
 from modules.random_operations import random_menu
@@ -33,7 +32,7 @@ def main_menu():
                 explore_module_attributes()
             elif choice == 7:
                 print("Thank you for using the Multi-Utility Toolkit!")
-                sys.exit(0)
+                break
             else:
                 print("Invalid choice. Please try again.")
         
